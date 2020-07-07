@@ -1,0 +1,12 @@
+install.packages("hexbin", "tidyverse", "ggplot2")
+library(hexbin)
+library(tidyverse)
+library(ggplot2)
+data("diamonds")
+ggplot(diamonds, aes(carat, price)) + 
+  geom_hex()
+#guardar automaticamente
+ggsave("diamonds.png")
+#ggsave("diamonds.pdf")
+#Crear un excel directamente en el escritorio
+write_csv(diamonds, "diamonds.csv")
