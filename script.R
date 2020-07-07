@@ -5,7 +5,7 @@ ipak <- function(pkg){
     install.packages(new.pkg, dependencies = TRUE)
   sapply(pkg, require, character.only = TRUE)
 }
-packages <- c("bibliometrix","dplyr","fpc","NbClust","cluster","factoextra","tidyr", "RColorBrewer")
+packages <- c("bibliometrix") #Pueden poner entre comillas seguido de comas cuantos paquetes necesiten, se instalan y cargan con una sola orden
 ipak(packages)
 #file
 file <- c("1.bib", "2.bib", "3.bib", "4.bib", "5.bib") 
@@ -41,6 +41,7 @@ indices$H
 topAU <- authorProdOverTime(M, k = 10, graph = TRUE)
 #Bradford law
 BR <- bradford(M)
+BR
 #Lotka law
 L <- lotka(results)
 # Author Productivity. Empirical Distribution
