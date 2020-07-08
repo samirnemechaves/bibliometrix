@@ -8,5 +8,5 @@ ggplot(diamonds, aes(carat, price)) +
 #guardar automaticamente imagen de ggplot2
 ggsave("diamonds.png")
 #ggsave("diamonds.pdf")
-#Crear un excel directamente en el escritorio
+#Crear un excel directamente en el directorio del proyecto
 write_csv(diamonds, "diamonds.csv")
