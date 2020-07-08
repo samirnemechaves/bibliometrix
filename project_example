@@ -5,7 +5,7 @@ library(ggplot2)
 data("diamonds")
 ggplot(diamonds, aes(carat, price)) + 
   geom_hex()
-#guardar automaticamente
+#guardar automaticamente imagen de ggplot2
 ggsave("diamonds.png")
 #ggsave("diamonds.pdf")
 #Crear un excel directamente en el escritorio
