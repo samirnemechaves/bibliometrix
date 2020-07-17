@@ -1,4 +1,4 @@
-install.packages("hexbin", "tidyverse", "ggplot2")
+install.packages("hexbin", "tidyverse")
 library(hexbin)
 library(tidyverse)
 library(ggplot2)
